@@ -4,10 +4,8 @@
   <meta charset="utf-8">
   <%
   var title = page.title;
-
   if (is_archive()){
     title = 'Archives';
-
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
     } else if (is_year()){
@@ -21,7 +19,11 @@
   %>
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="<%= config.url %>">
+  <%if(theme.dns_prefetch && theme.dns_prefetch.length != 0){%>
+    <% for (var i in theme.dns_prefetch){ %>
+      <link rel="dns-prefetch" href="<%= theme.dns_prefetch[i] %>">
+    <% } %>
+  <% } %>
   <link rel="apple-touch-icon" href="<%- theme.avatar %>">
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -39,6 +41,5 @@
       background: <%= theme.style && theme.style.slider ? theme.style.slider : defaultCtnBg %>;
     }
   </style>
-
-  <script src="<%=config.root%>./disqus.31a3c3.js"></script>
+  <script async src="<%=config.root%>./disqus.31a3c3.js"></script>
 </head>

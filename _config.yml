@@ -125,6 +125,23 @@ smart_menu:
   friends: '友链'
   #aboutme: '关于我'
 
+# dns预获取
+dns_prefetch:
+  www.fanhaobai.com
+  img.fanhaobai.com
+  img0.fanhaobai.com
+  img1.fanhaobai.com
+  img2.fanhaobai.com
+  img3.fanhaobai.com
+  img4.fanhaobai.com
+  img5.fanhaobai.com
+  disqus.fanhaobai.com
+  cdn.bootcss.com
+  c.disquscdn.com
+  assets-cdn.github.com
+  cn.gravatar.com
+  uploads.disquscdn.com
+
 friends:
   美团技术点评: http://tech.meituan.com
   阿里云中间件: http://jm.taobao.org
