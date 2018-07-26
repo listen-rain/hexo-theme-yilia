@@ -127,20 +127,20 @@ smart_menu:
 
 # dns预获取
 dns_prefetch:
-  www.fanhaobai.com
-  img.fanhaobai.com
-  img0.fanhaobai.com
-  img1.fanhaobai.com
-  img2.fanhaobai.com
-  img3.fanhaobai.com
-  img4.fanhaobai.com
-  img5.fanhaobai.com
-  disqus.fanhaobai.com
-  cdn.bootcss.com
-  c.disquscdn.com
-  assets-cdn.github.com
-  cn.gravatar.com
-  uploads.disquscdn.com
+  0: www.fanhaobai.com
+  1: img.fanhaobai.com
+  2: img0.fanhaobai.com
+  3: img1.fanhaobai.com
+  4: img2.fanhaobai.com
+  5: img3.fanhaobai.com
+  6: img4.fanhaobai.com
+  7: img5.fanhaobai.com
+  8: disqus.fanhaobai.com
+  9: cdn.bootcss.com
+  10: c.disquscdn.com
+  11: assets-cdn.github.com
+  12: cn.gravatar.com
+  13: uploads.disquscdn.com
 
 friends:
   美团技术点评: http://tech.meituan.com
