@@ -21,7 +21,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <%if(theme.dns_prefetch && theme.dns_prefetch.length != 0){%>
     <% for (var i in theme.dns_prefetch){ %>
-      <link rel="dns-prefetch" href="<%= theme.dns_prefetch[i] %>">
+      <link rel="dns-prefetch" href="//<%= theme.dns_prefetch[i] %>">
     <% } %>
   <% } %>
   <link rel="apple-touch-icon" href="<%- theme.avatar %>">
