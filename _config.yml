@@ -72,7 +72,7 @@ google_analytics: ''
 favicon: /favicon.ico
 
 #你的头像url
-avatar: https://img.fanhaobai.com/header.jpg
+avatar: //img0.fanhaobai.com/header.jpg
 
 #是否开启分享
 share_jia: true
@@ -94,7 +94,7 @@ changyan_conf: false
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus:
   shortname: 'fanhaobai'
-  api: 'https://disqus.fanhaobai.com'
+  api: '//disqus.fanhaobai.com'
 
 #5、Gitment
 gitment_owner: false      #你的 GitHub ID
