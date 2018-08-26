@@ -18,5 +18,4 @@ addLoadEvent(function() {
 	Share.init()
 	Viewer.init()
 	Aside.init()
-    iDisqus.init()
 })

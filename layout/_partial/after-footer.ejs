@@ -1,23 +1,41 @@
 <script>
-	var yiliaConfig = {
-		mathjax: <%=theme.mathjax%>,
-		isHome: <%=is_home()%>,
-		isPost: <%=is_post()%>,
-		isArchive: <%=is_archive()%>,
-		isTag: <%=is_tag()%>,
-		isCategory: <%=is_category()%>,
-		open_in_new: <%=theme.open_in_new%>,
-		toc_hide_index: <%=theme.toc_hide_index%>,
-		root: "<%=config.root%>",
-		innerArchive: <%=theme.smart_menu.innerArchive ? true : false%>,
-		showTags: <%=(theme.slider && theme.slider.showTags) ? true : false%>
-	}
+var yiliaConfig = {
+    mathjax: <%=theme.mathjax%>,
+    isHome: <%=is_home()%>,
+    isPost: <%=is_post()%>,
+    isArchive: <%=is_archive()%>,
+    isTag: <%=is_tag()%>,
+    isCategory: <%=is_category()%>,
+    open_in_new: <%=theme.open_in_new%>,
+    toc_hide_index: <%=theme.toc_hide_index%>,
+    root: "<%=config.root%>",
+    innerArchive: <%=theme.smart_menu.innerArchive ? true : false%>,
+    showTags: <%=(theme.slider && theme.slider.showTags) ? true : false%>
+}
 </script>
 
 <%- partial('script') %>
 
 <% if (theme.mathjax){ %>
   <%- partial('mathjax') %>
+<% } %>
+
+<% if (theme.disqus || theme.disqus.shortname){ %>
+<script>
+  (function () {
+    var disq = new iDisqus('disqus_thread', {
+      forum: '<%= theme.disqus.shortname %>',
+      site: '<%= config.url %>',
+      api: '<%= theme.disqus.api %>',
+      url: '<%= config.url+url_for(post.path) %>',
+      mode: 2,
+      timeout: 3000,
+      init: true,
+      autoCreate: true
+    });
+    disq.count();
+  })();
+</script>
 <% } %>
 
 <%- partial('google-analytics') %>
