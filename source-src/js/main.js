@@ -12,8 +12,11 @@ import Aside from './aside'
 
 import {addLoadEvent} from './util'
 
+module.exports = require('./disqus.js');
+
 addLoadEvent(function() {
 	Share.init()
 	Viewer.init()
 	Aside.init()
+    iDisqus.init()
 })
