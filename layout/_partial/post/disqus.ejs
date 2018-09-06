@@ -3,7 +3,7 @@
 <script src="/disqus.js"></script>
 <script>
   (function () {
-    var disq = new iDisqus('disqus_thread', {
+    var disqus = new iDisqus('disqus_thread', {
       forum: '<%= theme.disqus.shortname %>',
       site: '<%= config.url %>',
       api: '<%= theme.disqus.api %>',
@@ -11,8 +11,9 @@
       mode: 2,
       timeout: 3000,
       init: true,
-      autoCreate: true
+      autoCreate: true,
+      relatedType: false
     });
-    disq.count();
+    disqus.count();
   })();
 </script>
