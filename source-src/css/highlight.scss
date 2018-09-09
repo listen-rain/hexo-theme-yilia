@@ -133,7 +133,6 @@ pre .class .params {
 pre .tag,
 pre .subst,
 pre .doctype,
-pre .params,
 pre .function,
 pre .css .value {
   color: #fff;
@@ -151,6 +150,7 @@ pre .symbol,
 pre .built_in,
 pre .builtin-name,
 pre .class,
+pre .params,
 pre .css ~ * .class,
 pre .function .title {
   color: #a6e22e;
