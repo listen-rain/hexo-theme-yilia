@@ -150,7 +150,6 @@ pre .symbol,
 pre .built_in,
 pre .builtin-name,
 pre .class,
-pre .params,
 pre .css ~ * .class,
 pre .function .title {
   color: #a6e22e;
@@ -169,6 +168,7 @@ pre .template-variable {
 pre .bullet,
 pre .quote,
 pre .number,
+pre .params,
 pre .regexp,
 pre .literal,
 pre .link {
