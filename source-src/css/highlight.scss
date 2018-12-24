@@ -5,7 +5,6 @@
   padding: 10px 10px;
   overflow: auto;
   color: #fff;
-  font-size: 0.9em;
   line-height: 22.400000000000002px;
 }
 .article-entry .highlight .gutter pre,
@@ -118,18 +117,24 @@
 .article-entry .gist .gist-file .gist-meta a:hover {
   text-decoration: underline;
 }
-pre .comment {
+pre .comment,
+pre .meta,
+pre .deletion {
   color: #75715e;
 }
 pre .keyword,
+pre .selector-tag,
+pre .name,
+pre .attr,
 pre .function .keyword,
 pre .class .params {
   color: #66d9ef;
 }
 pre .tag,
+pre .subst,
 pre .doctype,
-pre .params,
 pre .function,
+pre .params,
 pre .css .value {
   color: #fff;
 }
@@ -142,20 +147,44 @@ pre .preprocessor .keyword {
   color: #f92672;
 }
 pre .attribute,
+pre .symbol,
 pre .built_in,
+pre .builtin-name,
 pre .class,
 pre .css ~ * .class,
 pre .function .title {
   color: #a6e22e;
 }
 pre .value,
-pre .string {
+pre .string,
+pre .type,
+pre .selector-id,
+pre .selector-attr,
+pre .selector-pseudo,
+pre .addition,
+pre .variable,
+pre .template-variable {
   color: #e6db74;
 }
-pre .number {
+pre .bullet,
+pre .quote,
+pre .number,
+pre .regexp,
+pre .literal,
+pre .link {
   color: #7163d7;
 }
 pre .id,
 pre .css ~ * .id {
   color: #fd971f;
+}
+pre .strong,
+pre .emphasis {
+  color: #a8a8a2;
+}
+pre .strong {
+  font-weight: bold;
+}
+pre .emphasis{
+  font-style: italic;
 }

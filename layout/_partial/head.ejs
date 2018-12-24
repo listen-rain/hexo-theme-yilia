@@ -4,10 +4,8 @@
   <meta charset="utf-8">
   <%
   var title = page.title;
-
   if (is_archive()){
     title = 'Archives';
-
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
     } else if (is_year()){
@@ -21,10 +19,15 @@
   %>
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="<%= config.url %>">
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <%if(theme.dns_prefetch && theme.dns_prefetch.length != 0){%>
+    <% for (var i in theme.dns_prefetch){ %>
+      <link rel="dns-prefetch" href="//<%= theme.dns_prefetch[i] %>">
+    <% } %>
+  <% } %>
+  <link rel="apple-touch-icon" href="<%- theme.avatar %>">
+  <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <%- open_graph({image: theme.avatar}) %>
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
@@ -38,6 +41,4 @@
       background: <%= theme.style && theme.style.slider ? theme.style.slider : defaultCtnBg %>;
     }
   </style>
-  <%- partial('google-analytics') %>
-  <%- partial('baidu-analytics') %>
 </head>
