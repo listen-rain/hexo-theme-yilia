@@ -17,6 +17,7 @@ subnav:
   github: "https://github.com/listen-rain"
   weibo: "#"
   rss: "/atom.xml"
+  mail: "mailto:m15275049388@163.com"
   #zhihu: "#"
   #qq: "#"
   #weixin: "#"
@@ -25,7 +26,6 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:m15275049388@163.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -37,6 +37,9 @@ rss: /atom.xml
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
 root: /
+
+# 版权信息
+copyright: 'zhufengwei.com - 鲁ICP备18001204号-1'
 
 # Content
 # 文章太长，截断按钮文字
@@ -92,7 +95,7 @@ wangyiyun: false
 
 #3、畅言
 changyan_appid: cytB5An9Q
-changyan_conf: prod_411facb9e83cffc25375558c9f8d56e8
+changyan_conf: e3c99e894898f94f9ee49325832483d2
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
