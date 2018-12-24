@@ -4,8 +4,8 @@
   "description": "a theme for hexo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack",
-    "dist": "webpack -p --colors --mode production"
+    "dev": "rm -rf source && webpack",
+    "dist": "rm -rf source && webpack -p --colors --mode production"
   },
   "repository": {
     "type": "git",
